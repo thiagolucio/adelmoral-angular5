@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { RouterModule, Routes } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
-import { rounting } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { ServicosModule } from './servicos/servicos.module';
@@ -37,10 +34,7 @@ import { ObrasModule } from './obras/obras.module';
     TopbarModule,
     ContatoModule,
     PessoalModule,
-    ObrasModule,
-    FlexLayoutModule,
-    HttpClientModule,
-    rounting
+    ObrasModule
   ],
   exports: [
   ],
