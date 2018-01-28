@@ -18,6 +18,7 @@
 .settings/
 *.sublime-workspace
 
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
@@ -28,6 +29,7 @@
 # misc
 /.sass-cache
 /connect.lock
+package-lock.json
 /coverage
 /libpeerconnection.log
 npm-debug.log
