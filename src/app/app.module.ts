@@ -19,6 +19,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { ContatoModule } from './contato/contato.module';
 import { PessoalModule } from './pessoal/pessoal.module';
 import { ObrasModule } from './obras/obras.module';
+import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home/home.module';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ObrasModule } from './obras/obras.module';
     TopbarComponent,
     ObrasComponent,
     PessoalComponent,
-    ContatoComponent
+    ContatoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { ObrasModule } from './obras/obras.module';
     ObrasModule,
     FlexLayoutModule,
     HttpClientModule,
-    rounting
+    rounting,
+    HomeModule
   ],
   exports: [
   ],

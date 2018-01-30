@@ -6,14 +6,11 @@ import { PessoalComponent } from './pessoal/pessoal.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { ObrasComponent } from './obras/obras.component';
 import { ContatoComponent } from './contato/contato.component';
+import { HomeComponent } from './home/home.component';
 
 
 const appRoutes: Routes = [
-    {
-        path: '',
-        component: AppComponent,
-        // data: { title: 'Adel Moral Arquitetura & Engenharia' }
-    },
+    { path: '', component: HomeComponent },
     { path: 'pessoal', component: PessoalComponent },
     { path: 'servicos', component: ServicosComponent },
     { path: 'contato', component: ContatoComponent },
