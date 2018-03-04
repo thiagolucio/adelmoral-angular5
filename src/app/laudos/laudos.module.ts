@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PageHeaderModule } from '../page-header/page-header.module';
 
 @NgModule({
   imports: [
-    CommonModule,
-    PageHeaderModule
+    CommonModule
   ],
   declarations: []
 })
-export class HomeModule {
-  
- }
+export class LaudosModule { }

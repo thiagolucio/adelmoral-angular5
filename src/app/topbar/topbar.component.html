@@ -1,12 +1,10 @@
-  <mat-toolbar color="primary" class="mat-elevation-z4">
+  <mat-toolbar color="primary" class="mat-elevation-z9">
     <mat-toolbar-row>
       <a routerLink=""><img src="././assets/images/logoFlatXs.png" class="logoMenu"/></a>
-      <!--<span>{{title}}</span>-->
       <span class="spacer"></span> 
       <button mat-button color="warn" routerLink="/servicos">Serviços</button>      
       <button mat-button color="warn"  [matMenuTriggerFor]="menu">Obras</button>
       <mat-menu #menu="matMenu">
-        <!-- <button mat-menu-item *ngFor="let obra of obras" routerLink="{{obra.url}}" ng-href="{{obra.url}}">{{obra.item}}</button> -->
         <button mat-menu-item color="warn" *ngFor="let obra of obras" routerLink="{{obra.url}}">{{obra.item}}</button>
       </mat-menu>
       <button mat-button color="warn" routerLink="/pessoal">Pessoal</button>
