@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PageHeaderModule } from '../page-header/page-header.module';
+import { rounting } from '../app.routing';
 
 @NgModule({
   imports: [
     CommonModule,
-    PageHeaderModule
+    rounting   
   ],
   declarations: []
 })
-export class HomeModule {
-  
- }
+export class PageHeaderModule {}
+ 
