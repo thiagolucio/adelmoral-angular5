@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { RouterModule, Routes } from '@angular/router';
+// import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { rounting } from './app.routing';
 
@@ -21,6 +21,13 @@ import { PessoalModule } from './pessoal/pessoal.module';
 import { ObrasModule } from './obras/obras.module';
 import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
+import { ConstrucoesComponent } from "./construcoes/construcoes.component";
+import { ReformasComponent } from "./reformas/reformas.component";
+import {LegalizacoesComponent} from "./legalizacoes/legalizacoes.component";
+import { LaudosComponent } from "./laudos/laudos.component";
+import { VistoriasComponent } from "./vistorias/vistorias.component";
+import { EspeciaisComponent } from "./especiais/especiais.component";
+import {ContrucoesService} from "./construcoes/construcoes.service"
 
 
 @NgModule({
@@ -31,7 +38,13 @@ import { HomeModule } from './home/home.module';
     ObrasComponent,
     PessoalComponent,
     ContatoComponent,
-    HomeComponent
+    HomeComponent,
+    ConstrucoesComponent,
+    ReformasComponent,
+    LegalizacoesComponent,
+    LaudosComponent,
+    VistoriasComponent,
+    EspeciaisComponent    
   ],
   imports: [
     BrowserModule,
@@ -48,8 +61,10 @@ import { HomeModule } from './home/home.module';
     HomeModule
   ],
   exports: [
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContrucoesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
