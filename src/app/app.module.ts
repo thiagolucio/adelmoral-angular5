@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FlexLayoutModule } from '@angular/flex-layout';
-// import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { rounting } from './app.routing';
-
 
 import { AppComponent } from './app.component';
 import { ServicosModule } from './servicos/servicos.module';
@@ -27,7 +24,8 @@ import {LegalizacoesComponent} from "./legalizacoes/legalizacoes.component";
 import { LaudosComponent } from "./laudos/laudos.component";
 import { VistoriasComponent } from "./vistorias/vistorias.component";
 import { EspeciaisComponent } from "./especiais/especiais.component";
-import {ContrucoesService} from "./construcoes/construcoes.service"
+import {ContrucoesService} from "./construcoes/construcoes.service";
+
 
 
 @NgModule({
@@ -44,7 +42,7 @@ import {ContrucoesService} from "./construcoes/construcoes.service"
     LegalizacoesComponent,
     LaudosComponent,
     VistoriasComponent,
-    EspeciaisComponent    
+    EspeciaisComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +53,6 @@ import {ContrucoesService} from "./construcoes/construcoes.service"
     ContatoModule,
     PessoalModule,
     ObrasModule,
-    FlexLayoutModule,
     HttpClientModule,
     rounting,
     HomeModule

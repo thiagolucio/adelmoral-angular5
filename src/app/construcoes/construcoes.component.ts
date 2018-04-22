@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ImgSrcDirective } from '@angular/flex-layout';
-import { ContrucoesService } from './construcoes.service';
+import {Component, OnInit} from '@angular/core';
+import {ContrucoesService} from './construcoes.service';
 
 @Component({
   selector: 'app-construcoes',
@@ -9,19 +8,17 @@ import { ContrucoesService } from './construcoes.service';
 })
 export class ConstrucoesComponent implements OnInit {
 
-  public construcoes = [];
+  construcoes: Array<any>;
 
-  constructor(private _construcoesService: ContrucoesService) { }
-
-  ngOnInit() {
-    this._construcoesService.getConstrucoes()
-      .subscribe(data => this.construcoes = data);
+  constructor(private construcoesService: ContrucoesService) {
   }
 
+  ngOnInit() {
+    this.listar();
+  }
+
+  listar() {
+    this.construcoesService.listar().subscribe(dados => this.construcoes = dados);
+  }
 }
-export interface IConstrucoes {
-  idConstrucao: number,
-  tituloConstrucao: string,
-  descricaoConstrucao: string,
-  imagemConstrucoes: ImgSrcDirective
-}
+

@@ -10,7 +10,7 @@ import { LegalizacoesComponent } from "./legalizacoes/legalizacoes.component";
 import {LaudosComponent} from "./laudos/laudos.component";
 import { VistoriasComponent } from "./vistorias/vistorias.component";
 import { EspeciaisComponent } from "./especiais/especiais.component";
-import { ObrasComponent } from "./obras/obras.component";
+
 
 
 const appRoutes: Routes = [
@@ -25,11 +25,5 @@ const appRoutes: Routes = [
     { path: 'vistorias', component: VistoriasComponent },
     { path: 'especiais', component: EspeciaisComponent }
 
-    // {
-    //     path: '',
-    //     redirectTo: '/heroes',
-    //     pathMatch: 'full'
-    // },
-    // { path: '**', component: PageNotFoundComponent }
 ];
 export const rounting: ModuleWithProviders = RouterModule.forRoot(appRoutes);

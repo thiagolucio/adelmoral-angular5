@@ -3,6 +3,6 @@
   width: auto;
 }
 .mat-toolbar {
-  position: fixed;  
-  z-index: 2;
+  position: fixed;
+  top: 0;
 }
