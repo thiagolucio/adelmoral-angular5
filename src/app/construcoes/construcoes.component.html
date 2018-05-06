@@ -1,10 +1,14 @@
 <div>
   <h2>Lista Construcoes</h2>
-  <ul *ngFor="let construcao of construcoes">
-    <li>
-      {{construcao.tituloConstrucao}}
-    </li>
-  </ul>
+    <ul>
+        <li *ngFor = "let construcao of construcoes">
+            <p>{{construcao.id}}</p>
+            <p>{{construcao.tituloConstrucao}}</p>
+            <p>{{construcao.descricaoConstrucao}}</p>
+            <img src="{{construcao.url}}"/>
+            
+        </li>
+    </ul>
 </div>
 
 

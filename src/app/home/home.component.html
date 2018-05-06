@@ -1,3 +1,31 @@
-<div>
-  Home Works!
+<div class="wrapperSlide">
+    <ui-carousel [infinite]="true" [fade]="true" [speed]="2000" height="300px" width="100%">        
+        <ui-carousel-item class="itemSlide" *ngFor = "let slide of slides">
+            <div class="titleSlide">{{slide.tituloSlide}}</div>
+            <div class="descricaoSlide">{{slide.descricaoSlide}}</div>
+            <img src="{{slide.urlSlide}}" alt="" draggable="true">
+        </ui-carousel-item>
+    </ui-carousel>    
 </div>
+<div class="container">
+    <h1>Aqui vai o texto normal de conteúdo centralizado</h1>
+    <div class="classTresPartes">
+        <mat-card class="cardServicesHome">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{sessaoUm.tituloSessaoUm}}</mat-card-title> 
+            </mat-card-header>
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    {{sessaoUm.descricaoSessaoUm}}
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { rounting } from './app.routing';
 
 import { AppComponent } from './app.component';
@@ -24,7 +25,7 @@ import {LegalizacoesComponent} from "./legalizacoes/legalizacoes.component";
 import { LaudosComponent } from "./laudos/laudos.component";
 import { VistoriasComponent } from "./vistorias/vistorias.component";
 import { EspeciaisComponent } from "./especiais/especiais.component";
-import {ContrucoesService} from "./construcoes/construcoes.service";
+import { UICarouselModule } from "ui-carousel";
 
 
 
@@ -54,14 +55,18 @@ import {ContrucoesService} from "./construcoes/construcoes.service";
     PessoalModule,
     ObrasModule,
     HttpClientModule,
+    HttpModule,
+    JsonpModule,
     rounting,
-    HomeModule
+    HomeModule,
+    UICarouselModule
   ],
   exports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    UICarouselModule
   ],
-  providers: [ContrucoesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

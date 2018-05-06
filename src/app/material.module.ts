@@ -18,7 +18,8 @@ import {
   MatTableModule,
   MatPaginatorModule,
   MatProgressBarModule,
-  MatCheckboxModule,
+  MatCheckboxModule,  
+  MatSliderModule,
   MatSlideToggleModule
 } from '@angular/material';
 
@@ -43,6 +44,7 @@ import {
     MatPaginatorModule,
     MatProgressBarModule,
     MatCheckboxModule,
+    MatSliderModule,
     MatSlideToggleModule
   ],
   exports: [
@@ -65,6 +67,7 @@ import {
     MatProgressBarModule,
     MatCheckboxModule,
     MatPaginatorModule,
+    MatSliderModule,
     MatSlideToggleModule
 
   ],
