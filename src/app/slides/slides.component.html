@@ -1,0 +1,9 @@
+<div class="wrapperSlide">
+    <ui-carousel [infinite]="true" [fade]="true" [speed]="2000" height="300px" width="100%">
+        <ui-carousel-item class="itemSlide" *ngFor = "let slide of slides">
+            <div class="titleSlide">{{slide.tituloSlide}}</div>
+            <div class="descricaoSlide">{{slide.descricaoSlide}}</div>
+            <img src="{{slide.urlSlide}}" alt="" draggable="true">
+        </ui-carousel-item>
+    </ui-carousel>
+</div>

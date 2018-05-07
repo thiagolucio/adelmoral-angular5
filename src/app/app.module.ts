@@ -26,7 +26,8 @@ import { LaudosComponent } from "./laudos/laudos.component";
 import { VistoriasComponent } from "./vistorias/vistorias.component";
 import { EspeciaisComponent } from "./especiais/especiais.component";
 import { UICarouselModule } from "ui-carousel";
-
+import { SlidesComponent } from './slides/slides.component';
+import { SlidesModule } from './slides/slides.module';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { UICarouselModule } from "ui-carousel";
     LegalizacoesComponent,
     LaudosComponent,
     VistoriasComponent,
-    EspeciaisComponent
+    EspeciaisComponent,
+    SlidesComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,8 @@ import { UICarouselModule } from "ui-carousel";
     JsonpModule,
     rounting,
     HomeModule,
-    UICarouselModule
+    UICarouselModule,
+    SlidesModule
   ],
   exports: [
     BrowserModule,
