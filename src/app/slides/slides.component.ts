@@ -11,7 +11,7 @@ export type Item = { idSlide: number, tituloSlide: string, descricaoSlide: strin
 })
 export class SlidesComponent implements OnInit {
 
-    slides: Array<Item>;
+  slides: Array<Item>;
 
   constructor(private http: Http) { }
 

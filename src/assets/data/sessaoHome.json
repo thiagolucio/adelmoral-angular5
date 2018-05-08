@@ -1,5 +1,4 @@
-{
-    "sessaoHomeUm": [
+[
     {
         "idSessaoUm": 1,
         "tituloSessaoUm": "Titulo Slide 1",
@@ -19,4 +18,3 @@
         "urlSessaoUm": "http://www.adelmoral.com.br/images/banner/p10.jpg"
     }
 ]
-}

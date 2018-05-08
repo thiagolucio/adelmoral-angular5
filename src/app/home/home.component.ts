@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Http, Response, JsonpModule } from "@angular/http";
 import 'rxjs/add/operator/map';
 
-export type Item = { idSlide: number, tituloSlide: string, descricaoSlide: string, urlSlide: string };
+export type Item = { idSessaoUm: number, tituloSessaoUm: string, descricaoSessaoUm: string, urlSessaoUm: string };
 
 @Component({
   selector: 'app-home',
@@ -11,16 +11,16 @@ export type Item = { idSlide: number, tituloSlide: string, descricaoSlide: strin
 })
 export class HomeComponent implements OnInit {
   
-  slides: Array<Item>;
+  home: Array<any>;
 
   constructor(private http: Http) { }
 
   ngOnInit() {
     this.http
-      .get("/assets/data/slides.json")
+      .get("/assets/data/sessaoHome.json")
       .map(data => data.json() as Array<Item>)      
       .subscribe(data => {
-        this.slides = data;
+        this.home = data;
         console.log(data);
       });
   }

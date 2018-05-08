@@ -29,7 +29,6 @@ import { UICarouselModule } from "ui-carousel";
 import { SlidesComponent } from './slides/slides.component';
 import { SlidesModule } from './slides/slides.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +66,8 @@ import { SlidesModule } from './slides/slides.module';
   exports: [
     BrowserModule,
     HttpClientModule,
-    UICarouselModule
+    UICarouselModule,
+    SlidesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

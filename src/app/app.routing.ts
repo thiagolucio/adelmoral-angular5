@@ -10,7 +10,7 @@ import { LegalizacoesComponent } from "./legalizacoes/legalizacoes.component";
 import {LaudosComponent} from "./laudos/laudos.component";
 import { VistoriasComponent } from "./vistorias/vistorias.component";
 import { EspeciaisComponent } from "./especiais/especiais.component";
-
+import { SlidesComponent } from './slides/slides.component';
 
 
 const appRoutes: Routes = [
@@ -23,7 +23,8 @@ const appRoutes: Routes = [
     { path: 'legalizacoes', component: LegalizacoesComponent },
     { path: 'laudos', component: LaudosComponent },
     { path: 'vistorias', component: VistoriasComponent },
-    { path: 'especiais', component: EspeciaisComponent }
+    { path: 'especiais', component: EspeciaisComponent },
+    { path: 'slides', component: SlidesComponent }
 
 ];
 export const rounting: ModuleWithProviders = RouterModule.forRoot(appRoutes);
