@@ -2,7 +2,7 @@
 <div class="container">
     <h1>Aqui vai o texto normal de conteúdo centralizado</h1>
     <div class="classTresPartes">
-        <mat-card class="cardServicesHome">
+        <mat-card class="cardServicesHome" *ngFor = "let sessaoUm of home">
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
             <mat-card-title>{{sessaoUm.tituloSessaoUm}}</mat-card-title>
