@@ -30,14 +30,13 @@ export class ConstrucoesComponent implements OnInit {
   // ]
 
   ngOnInit() {
-       this.http
-      .get("/assets/data/construcoes.json")
+       this.http.get("/assets/data/construcoes.json")
       .map(data => data.json() as Array<Item>)
       .subscribe(data => {
         this.construcoes = data;
         console.log(data);
       });
   }
-  
+
 }
 
